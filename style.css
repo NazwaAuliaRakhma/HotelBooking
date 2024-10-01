@@ -1,0 +1,281 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px; /* Added padding to container for better spacing */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed; /* Changed to fixed for consistent positioning */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the navbar is above other content */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px; /* Added padding for better click area */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly lighter background on hover */
+}
+
+.login-register {
+    display: flex;
+    align-items: center;
+}
+
+.login-register a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 5px 10px; /* Added padding for better click area */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.login-register a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly lighter background on hover */
+}
+
+/* Room Detail Section (If needed) */
+#room-detail {
+    margin-top: 80px; /* Adjusted for fixed navbar */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Index Page Styles */
+.index-page header {
+    background-image: url('image/grand.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.index-page .navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.index-page .hero-section h1 {
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.index-page .hero-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.index-page .cta a {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.index-page #rooms {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.index-page #rooms h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.index-page .rooms-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.index-page .room-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.index-page .room-card:hover {
+    transform: scale(1.05);
+}
+
+.index-page .room-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.index-page .room-card p {
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+/* Booking Page Styles */
+.booking-page header {
+    background-image: url('image/grand.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.booking-page .container {
+    padding: 20px;
+}
+
+.booking-page form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.booking-page label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.booking-page input[type="text"],
+.booking-page input[type="date"],
+.booking-page input[type="number"],
+.booking-page select {
+    width: calc(100% - 16px); 
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+.booking-page .radio-group,
+.booking-page .checkbox-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.booking-page .radio-group input,
+.booking-page .checkbox-group input {
+    margin-right: 5px;
+}
+
+.booking-page .radio-group label,
+.booking-page .checkbox-group label {
+    margin: 0;
+}
+
+.booking-page button,
+.booking-page input[type="submit"],
+.booking-page input[type="reset"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.booking-page button:hover,
+.booking-page input[type="submit"]:hover,
+.booking-page input[type="reset"]:hover {
+    background-color: #555;
+}
+
+/* About Page Styles */
+.about-page header {
+    background-image: url('image/grand.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.about-page {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.booking-page .container {
+    padding: 20px;
+}
+
+.about-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-page p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-page address {
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.about-page address p {
+    margin: 5px 0;
+}
+
+.about-page .contact-info {
+    font-weight: bold;
+    margin-top: 20px;
+}
